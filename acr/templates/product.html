@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          .column {
+            float: right;
+            width: 30.33%;
+          }
+          
+          /* Clearfix (clear floats) */
+
+    </style>
+</head>
+<body>
+        
+              {% for i in asap %}
+                <!-- {{ i.image }} -->
+                <h1>{{ i.name }}</h1>
+                {{ i.price }}$
+                {{ i.des }}
+                <a href="{% url 'productview' i.id %}">view</a>
+             
+                {% endfor %}
+            </div>
+     
+</body>
+</html>
